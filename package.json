@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/perceptoscope/pscope-js-sdk/issues"
   },
-  "homepage": "https://github.com/perceptoscope/pscope-js-sdk"
+  "homepage": "https://github.com/perceptoscope/pscope-js-sdk",
+  "dependencies": {
+    "autobahn": "^0.9.6",
+    "bluebird": "^2.9.30",
+    "lodash": "^3.9.3"
+  }
 }
