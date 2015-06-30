@@ -9,6 +9,8 @@ console.log("connecting to wamp");
 pscope.connect({
 	url: 'ws://192.168.1.12:3000/'
 }).then(function() {
-	console.log("Connected!")
-	pscope.setRotation(Math.PI, 0, 100);
+	pscope.takeSnapshot('left').then(function(img) {
+		require("fs").writeFile("out.png", img, 'base64');
+		console.log(img);
+	})
 });
