@@ -2,6 +2,16 @@
 # pscope-js-sdk
 The javascript SDK for connecting to a Perceptoscope over it's WAMP WebSocket. Works in both NodeJS and the browser.
 
+## Example
+```js
+var pscope = new Perceptoscope('ws://localhost:3000');
+pscope.on(Perceptoscope.Events.ROTATION, rotation => {
+    console.log(rotation);
+});
+pscope.connect();
+```
+See [`/examples` directory](examples) for additional example code.
+
 
 ## Documentation
 <a name="Perceptoscope"></a>
@@ -32,14 +42,6 @@ Creates a Perceptope
 |-------|----------|----------------------------------------------------------------- |
 | url   | `string` | The websocket url to the perceptoscope ex. `ws://localhost:3000` |
 
-**Example**
-```js
-var pscope = new Perceptoscope('ws://localhost:3000');
-pscope.on(Perceptoscope.Events.ROTATION, rotation => {
-    console.log(rotation);
-});
-pscope.connect();
-```
 <a name="Perceptoscope+url"></a>
 
 #### perceptoscope.url ⇒ `string`
