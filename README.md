@@ -1,3 +1,4 @@
+![perceptoscope](http://perceptoscope.com/wp-content/uploads/2015/07/page1image1952.png)
 # pscope-js-sdk
 The javascript SDK for connecting to a Perceptoscope over it's WAMP WebSocket. Works in both NodeJS and the browser.
 
